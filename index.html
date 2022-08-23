@@ -9,25 +9,33 @@
     <title>Word A Day</title>
 </head>
 <body>
+    <section class="content">
     <header class="title-container">
         <h1 class="title">Word A Day</h1>
     </header>
     <main>
-        <div class="word-container">
-            <button class="btn" onclick="newWord()">Generate Word</button>
-            <p id="wordDisplay"></p>
+        <div class="button-container">
+            <button class="generate" onclick="newWord()">Generate Word</button>
             </div>
-            <div class="buttons-container">
-                <div class="buttons">
-                <ul>
-                    <li class="sound"><i class="fa-solid fa-volume-high"></i></li>
-                    <li class="copy"><i class="fa-solid fa-copy"></i></li>
-                    <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
-                </ul>
+            <div class="result" id="result">
+                <div class="word">
+                <h2 id="wordDisplay">Sample</h2>
+                <button class="speech"><i class="fa-solid fa-volume-high"></i></button>
                 </div>
             </div>
+            <div class="details">
+                <p>pos</p>
+                <p>/sample/</p>
+            </div>
+            <p class="meaning">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, possimus?
+            </p>
+            <p class="example">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed!
+            </p>
     </main>
-    <footer> Word A Day &copy; <br/> Designed and developed by Claude Giroux & Fatuma Adan 2022</footer>
+    <footer> <span>Word A Day &copy;</span> <br/> Designed and developed by Claude Giroux & Fatuma Adan 2022</footer>
+    </section>
 </body>
 <script src="app.js"></script>
 </html>
