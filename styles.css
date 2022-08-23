@@ -14,12 +14,12 @@ body {
 
 .content {
     border: 2px solid black;
-    margin: 0.5rem 1rem;
+    border-radius: 10px;
     background-color: #66ddaa;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 48%;
-    left: 48%;
+    top: 50%;
+    left: 50%;
     width: 85%;
     max-width: 50vw;
     max-height: 100vh;
@@ -40,36 +40,51 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button-container {
+.input-container {
     text-align: center;
     padding: 10px 0 25px 0;
 }
 
+.input {
+    width: 40%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #fa8072;
+    color: black;
+    border-radius: 30px;
+    box-shadow: inset -5px -5px 20px #64332e, inset 5px 5px 20px #ffcdb6;
+
+}
+
 .generate {
-    padding: 12px;
-    font-size: 0.9rem;
+    padding: 8px;
+    font-size: 1rem;
     font-weight: 600;
     border-radius: 30px;
     background: #fa8072;
     box-shadow: inset -5px -5px 20px #64332e, inset 5px 5px 20px #ffcdb6;
 }
 
+.generate:hover {
+    transform: translate(5%, 0%);
+}
+
 .result {
-    /* visibility: hidden; */
-    padding-bottom: 5px;
+    position: relative;
 }
 
 .word {
     display: flex;
-    /* justify-content: space-evenly; */
-    padding-left: 39%;
-    padding-right: auto;
+    padding-bottom: 5px;
+    padding-left: 35%;
+    text-align: center;
 }
 
 #wordDisplay {
     font-size: 2.5rem;
     font-weight: bolder;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .speech {
@@ -78,43 +93,40 @@ body {
     border: none;
     outline: none;
     color: salmon;
-    transform: translate(0, 10%);
+    transform: translate(0, 15%);
 }
 
 .speech:hover {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .details {
     display: flex;
     gap: 10px;
-    padding-left: 39%;
-    margin-bottom: 2rem;
-    /* visibility: hidden; */
+    padding-left: 38%;
+    margin-bottom: 1.5rem;
 }
 
 .meaning {
-    /* visibility: hidden; */
-    margin: 0 2rem 0 2rem;
-    border-left: 3px solid #fa8072;
-    padding-left: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 2rem;
 }
 
 .example {
-    /* visibility: hidden; */
-    margin: 1rem 2rem 1rem 3rem;
+    margin: 1rem 20% 2rem 20%;
     border-left: 3px solid #fa8072;
     padding-left: 10px;
     font-style: italic;
 }
 
 footer {
-    border-top: 2px solid salmon;
+    border-top: 3px solid salmon;
     text-align: center;
-    margin-top: 0.5rem;
     padding: 1rem 0 0.5rem 0;
     background-color: black;
     font-size: 0.9rem;
+    border-radius: 0 0 8px 8px;
 }
 
 span {
