@@ -74,6 +74,12 @@ body {
     position: relative;
 }
 
+.error {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+    font-size: 2rem;
+}
+
 .word {
     display: flex;
     padding-bottom: 5px;
