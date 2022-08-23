@@ -9,6 +9,7 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: peachpuff;
     background-color: salmon;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .content {
@@ -20,6 +21,8 @@ body {
     top: 48%;
     left: 48%;
     width: 85%;
+    max-width: 50vw;
+    max-height: 100vh;
 
 }
 
@@ -33,7 +36,8 @@ body {
     font-weight: bold;
     text-decoration: underline;
     color: black;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .button-container {
@@ -57,43 +61,55 @@ body {
 
 .word {
     display: flex;
-    justify-content: space-between;
-    padding-left: 12rem;
-    padding-right: 9rem;
+    /* justify-content: space-evenly; */
+    padding-left: 39%;
+    padding-right: auto;
 }
 
 #wordDisplay {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder;
+    padding-right: 20px;
 }
 
 .speech {
     font-size: 1.5rem;
     background-color: transparent;
     border: none;
+    outline: none;
     color: salmon;
+    transform: translate(0, 10%);
+}
+
+.speech:hover {
+    font-size: 2.5rem;
 }
 
 .details {
     display: flex;
     gap: 10px;
-    padding-left: 12rem;
+    padding-left: 39%;
     margin-bottom: 2rem;
     /* visibility: hidden; */
 }
 
 .meaning {
     /* visibility: hidden; */
-    padding: 0 2rem 0 2rem;
+    margin: 0 2rem 0 2rem;
+    border-left: 3px solid #fa8072;
+    padding-left: 10px;
 }
 
 .example {
     /* visibility: hidden; */
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem 1rem 3rem;
+    border-left: 3px solid #fa8072;
+    padding-left: 10px;
+    font-style: italic;
 }
 
 footer {
-    border-top: 1px solid black;
+    border-top: 2px solid salmon;
     text-align: center;
     margin-top: 0.5rem;
     padding: 1rem 0 0.5rem 0;

@@ -1,24 +1,22 @@
 /////////////////////// API Group Project ////////////////////////
-// URL:  https://od-api.oxforddictionaries.com/api/v2
-// API KEY:  0415e12cec4a9f7b67521a618de23066
-// App ID: b6985f44
 
-const url = "https://od-api.oxforddictionaries.com/api/v2";
-const apiKey = "0415e12cec4a9f7b67521a618de23066";
-const appId = "b6985f44";
+const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
-function newWord() {
-    let randomNumber = Math.floor(Math.random() * (quotes.length));
-    document.getElementById('wordDisplay').innerHTML = quotes[randomNumber];
-}
+const result = document.getElementById("result");
+const generate = document.getElementById("generate");
+const soundBtn = document.querySelector(".speech");
 
-soundBtn = document.querySelector(".speech");
+generate.addEventListener("click", () => {
+    fetch(`${url}`).then((response) => response.json) .then((data) => console.log(data));
+});
 
 soundBtn.addEventListener("click", () => {
     let utterance = new SpeechSynthesisUtterance(`${wordDisplay.innerText}`);
     speechSynthesis.speak(utterance);
     // SpeechSynthesisUtterance is a web speech api that represents a speech request
 });
+
+
 
 
 
