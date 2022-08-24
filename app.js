@@ -29,7 +29,7 @@ generate.addEventListener("click", () => {
                 sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
     })
     .catch( () => {
-        result.innerHTML = `<h2 class="error">Couldn't Find That Word</h2>`;
+        result.innerHTML = `<h2 class="error">That Word Doesn't Appear To Exist</h2>`;
     });
 });
 function playSound() {
