@@ -29,12 +29,12 @@ body {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     text-decoration: underline;
     color: black;
     padding: 2rem 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Ubuntu', sans-serif;
 }
 
 .input-container {
@@ -95,12 +95,12 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-    color: salmon;
+    color: black;
     transform: translate(0, 13%);
 }
 
 .speech:hover {
-    transform: translate(25%, 13%);
+    color: salmon;
 }
 
 .details {

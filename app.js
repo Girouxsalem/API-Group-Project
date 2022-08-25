@@ -11,7 +11,7 @@ generate.addEventListener("click", () => {
     fetch(`${url}${input}`)
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
+        //console.log(data);
         result.innerHTML = `
                 <div class="word">
                     <h2 id="wordDisplay">${input}</h2>
